@@ -33,15 +33,15 @@ export function AboutSection() {
         <div>
           <p
             className={titleStyle({
-              className: "text-start font-light inline",
+              className: "text-start font-medium inline",
               size: "lg",
             })}
           >
-            Miss Athlète Côte d&apos;Ivoire est née d&apos;une ambition simple :
+            Miss Athlète Côte d&apos;Ivoire est née d&apos;une ambition simple : {" "}
           </p>
           <p
             className={titleStyle({
-              className: "text-start font-light inline",
+              className: "text-start font-medium inline",
               color: "secondary",
               size: "lg",
             })}

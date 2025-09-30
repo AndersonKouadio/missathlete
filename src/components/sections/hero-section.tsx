@@ -37,8 +37,8 @@ export function HeroSection() {
           </div>
           <div className="flex items-center gap-2.5 flex-wrap justify-center">
             <Link
-              href={"#"}
-              className="h-10 flex items-center justify-center w-fit px-5 text-sm font-normal tracking-wide text-primary rounded-full transition-all ease-out active:scale-95 bg-white dark:bg-background border border-[#E5E7EB] dark:border-[#27272A] hover:bg-white/80 dark:hover:bg-background/80"
+              href={"#event"}
+              className="h-10 flex items-center justify-center w-fit px-5 text-sm font-normal tracking-wide text-primary rounded-full transition-all ease-out active:scale-95 bg-white border border-[#E5E7EB]  hover:bg-white/90"
             >
               Découvrir l&apos;événement
             </Link>

@@ -52,7 +52,7 @@ const links = [
   { id: 2, name: "À propos", href: "#about" },
   { id: 3, name: "L'Événement", href: "#event" },
   { id: 5, name: "Partenaires", href: "#partners" },
-  { id: 4, name: "Les Athlètes", href: "#athletes" },
+  // { id: 4, name: "Les Athlètes", href: "#athletes" },
   { id: 6, name: "Contact", href: "#contact" },
 ];
 
@@ -175,9 +175,14 @@ export function Navbar() {
 
               <div className="flex flex-row items-center gap-1 md:gap-3 shrink-0">
                 <div className="flex items-center space-x-6">
-                  <Button className="rounded-full hidden md:block" size="lg">
-                    Prendre RDV
-                  </Button>
+                  <Link href="#contact">
+                    <Button
+                      className="rounded-full hidden md:block cursor-pointer"
+                      size="lg"
+                    >
+                      Prendre RDV
+                    </Button>
+                  </Link>
                 </div>
                 <button
                   className="md:hidden border border-border size-8 rounded-md cursor-pointer flex items-center justify-center"

@@ -13,7 +13,7 @@ import {
 export function CTASection() {
   return (
     <section
-      id="cta"
+      id="contact"
       className="flex flex-col items-center justify-center w-full px-6 py-12"
     >
       <div className="w-full max-w-screen-xl">
