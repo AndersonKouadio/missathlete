@@ -72,7 +72,7 @@ export function EventSection() {
           </div>
           <p className="text-gray-700 leading-relaxed">
             Les Prépaya Audites Cofoun, évoluent tissus, qui prennent le relais,
-            tissent l'avenir, chaînes narratives.
+            tissent l&apos;avenir, chaînes narratives.
           </p>
         </div>
       </div>

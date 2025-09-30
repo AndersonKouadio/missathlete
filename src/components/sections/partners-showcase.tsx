@@ -96,7 +96,7 @@ export function PartnersShowcase() {
       <p className="text-muted-foreground font-medium text-center max-w-xl">
         Nous sommes convaincus que grâce à des partenaires engagés comme vous,
         cette aventure deviendra une référence sportive et culturelle en Côte
-        d'Ivoire. Rejoignez-nous pour écrire ensemble cette histoire.
+        d&apos;Ivoire. Rejoignez-nous pour écrire ensemble cette histoire.
       </p>
       <div className="grid w-full max-w-7xl grid-cols-2 md:grid-cols-3 overflow-hidden border-y border-border items-center justify-center z-20">
         {partnerLogos.map((logo) => (
