@@ -8,6 +8,7 @@ import { AnimatePresence, motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Motion from "../primitives/Motion";
+import { Button } from "../ui/button";
 
 // Animation variants
 const overlayVariants = {
@@ -174,12 +175,9 @@ export function Navbar() {
 
               <div className="flex flex-row items-center gap-1 md:gap-3 shrink-0">
                 <div className="flex items-center space-x-6">
-                  <Link
-                    className="bg-primary h-8 hidden md:flex items-center justify-center text-sm font-normal tracking-wide rounded-full text-primary-foreground dark:text-secondary-foreground w-fit px-4 shadow-[inset_0_1px_2px_rgba(255,255,255,0.25),0_3px_3px_-1.5px_rgba(16,24,40,0.06),0_1px_1px_rgba(16,24,40,0.08)] border border-white/[0.12]"
-                    href="#"
-                  >
-                    Try for free
-                  </Link>
+                  <Button className="rounded-full" size="lg">
+                    Prendre RDV
+                  </Button>
                 </div>
                 <button
                   className="md:hidden border border-border size-8 rounded-md cursor-pointer flex items-center justify-center"
@@ -267,12 +265,9 @@ export function Navbar() {
 
                   {/* Action buttons */}
                   <div className="flex flex-col gap-2">
-                    <Link
-                      href="#"
-                      className="bg-primary h-8 flex items-center justify-center text-sm font-normal tracking-wide rounded-full text-primary-foreground dark:text-secondary-foreground w-full px-4 shadow-[inset_0_1px_2px_rgba(255,255,255,0.25),0_3px_3px_-1.5px_rgba(16,24,40,0.06),0_1px_1px_rgba(16,24,40,0.08)] border border-white/[0.12] hover:bg-secondary/80 transition-all ease-out active:scale-95"
-                    >
-                      Try for free
-                    </Link>
+                    <Button className="w-full rounded-full" size="lg">
+                      Prendre RDV
+                    </Button>
                   </div>
                 </div>
               </motion.div>
