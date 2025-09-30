@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import { siteConfig } from "@/lib/config";
+import Image from "next/image";
 
 export function QuoteSection() {
   const { quoteSection } = siteConfig;
@@ -16,9 +17,10 @@ export function QuoteSection() {
 
         <div className="flex gap-4">
           <div className="size-10 rounded-full bg-primary border border-border">
-            <img
+            <Image
               src={quoteSection.author.image}
               alt={quoteSection.author.name}
+              fill
               className="size-full rounded-full object-contain"
             />
           </div>

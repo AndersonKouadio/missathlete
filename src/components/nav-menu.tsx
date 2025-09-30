@@ -31,7 +31,7 @@ export function NavMenu({ links }: NavMenuProps) {
       setWidth(rect.width);
       setIsReady(true);
     }
-  }, []);
+  }, [links]);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -71,7 +71,7 @@ export function NavMenu({ links }: NavMenuProps) {
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Initial check
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isManualScroll]);
+  }, [isManualScroll, links]);
 
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,

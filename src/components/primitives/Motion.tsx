@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants, Target, Transition } from "framer-motion";
-import React, { forwardRef, JSX, ReactNode } from "react";
+import React, { ElementType, forwardRef, JSX, ReactNode } from "react";
 
 // On autorise les props target.hidden et target.visible et transition
 type AnimationParams = {
@@ -42,7 +42,7 @@ const Motion = forwardRef<HTMLElement, MotionProps>(
     const createVariant = variantCreators[variant];
     const variants = createVariant(animationParams);
 
-    const MotionComponent = motion[tag as keyof typeof motion] as any;
+    const MotionComponent = motion[tag as 'div'] as ElementType;
 
     const viewProps =
     trigger === "inView"
@@ -62,6 +62,7 @@ const Motion = forwardRef<HTMLElement, MotionProps>(
     );
   }
 );
+Motion.displayName = "Motion";
 
 export default Motion;
 

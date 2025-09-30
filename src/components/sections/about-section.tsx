@@ -38,7 +38,7 @@ export function AboutSection() {
               size: "lg",
             })}
           >
-            Miss Athlète Côte d&apos;Ivoire est née d'une ambition simple :
+            Miss Athlète Côte d&apos;Ivoire est née d&apos;une ambition simple :
           </p>
           <p
             className={titleStyle({
