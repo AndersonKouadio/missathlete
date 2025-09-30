@@ -75,7 +75,7 @@ export function AboutSection() {
             <Image
               width={300}
               height={300}
-              src="https://cdn.cosmos.so/27b021a9-6458-4088-9735-a6b135edc096?format=jpeg"
+              src="/images/kragbe/kragbe_1.jpg"
               alt="About"
               className="object-contain h-full relative"
             />
@@ -83,7 +83,7 @@ export function AboutSection() {
           <Image
             width={300}
             height={300}
-            src="https://cdn.cosmos.so/27b021a9-6458-4088-9735-a6b135edc096?format=jpeg"
+            src="/images/kragbe/kragbe_1.jpg"
             alt="About"
             className="object-contain h-full relative"
           />

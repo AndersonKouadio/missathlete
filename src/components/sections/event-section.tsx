@@ -190,7 +190,7 @@ export function EventSection() {
         </div>
         <div className="hidden lg:block lg:col-span-2 relative min-h-[400px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-xl">
           <Image
-            src="https://cdn.cosmos.so/afa69feb-4753-49cb-a226-57dcdcff0fc5?format=jpeg"
+            src="/images/kragbe/kragbe_2.jpg"
             alt="Event"
             fill
             className="w-full h-full object-cover"
