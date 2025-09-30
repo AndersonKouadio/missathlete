@@ -51,8 +51,8 @@ const links = [
   { id: 1, name: "Accueil", href: "#hero" },
   { id: 2, name: "À propos", href: "#about" },
   { id: 3, name: "L'Événement", href: "#event" },
-  { id: 4, name: "Les Athlètes", href: "#athletes" },
   { id: 5, name: "Partenaires", href: "#partners" },
+  { id: 4, name: "Les Athlètes", href: "#athletes" },
   { id: 6, name: "Contact", href: "#contact" },
 ];
 
@@ -175,7 +175,7 @@ export function Navbar() {
 
               <div className="flex flex-row items-center gap-1 md:gap-3 shrink-0">
                 <div className="flex items-center space-x-6">
-                  <Button className="rounded-full" size="lg">
+                  <Button className="rounded-full hidden md:block" size="lg">
                     Prendre RDV
                   </Button>
                 </div>

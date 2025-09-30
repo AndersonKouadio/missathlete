@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { SectionHeader } from "@/components/section-header";
 import { SocialProofTestimonials } from "@/components/testimonial-scroll";
 import { siteConfig } from "@/lib/config";

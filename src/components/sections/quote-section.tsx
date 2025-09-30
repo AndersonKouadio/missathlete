@@ -16,7 +16,7 @@ export function QuoteSection() {
         </p>
 
         <div className="flex gap-4">
-          <div className="size-10 rounded-full bg-primary border border-border">
+          <div className="size-10 relative rounded-full bg-primary border border-border">
             <Image
               src={quoteSection.author.image}
               alt={quoteSection.author.name}

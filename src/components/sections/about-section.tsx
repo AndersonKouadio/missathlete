@@ -14,7 +14,6 @@ export function AboutSection() {
             offset: 0.2,
           },
         },
-        transition: { delay: 0.3 },
       }}
       tag="section"
       id="about"
@@ -73,13 +72,13 @@ export function AboutSection() {
         </div>
         <div className="relative h-[400px] place-items-center lg:col-span-1">
           <div className="bg-primary blur-md lg:blur-xl absolute inset-0">
-          <Image
-            width={300}
-            height={300}
-            src="https://cdn.cosmos.so/27b021a9-6458-4088-9735-a6b135edc096?format=jpeg"
-            alt="About"
-            className="object-contain h-full relative"
-          />
+            <Image
+              width={300}
+              height={300}
+              src="https://cdn.cosmos.so/27b021a9-6458-4088-9735-a6b135edc096?format=jpeg"
+              alt="About"
+              className="object-contain h-full relative"
+            />
           </div>
           <Image
             width={300}
