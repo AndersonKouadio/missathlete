@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/sections/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/lib/site";
 import type { Metadata, Viewport } from "next";
@@ -48,7 +47,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="max-w-7xl mx-auto border-x relative">
-            <Navbar />
             {children}
           </div>
         </ThemeProvider>

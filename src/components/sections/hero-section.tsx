@@ -4,6 +4,7 @@ import Link from "next/link";
 import Motion from "../primitives/Motion";
 import Title from "../primitives/Title";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export function HeroSection() {
   return (
@@ -11,7 +12,7 @@ export function HeroSection() {
       animationParams={{ transition: { delay: 0.3 } }}
       tag="section"
       id="hero"
-      className="w-full relative p-6 h-[calc(100vh-10rem)]"
+      className="w-full relative p-6 h-[calc(100vh-10rem)] my-6"
     >
       <div className="relative h-full flex items-center justify-center w-full px-6">
         <div className="relative z-10 max-w-3xl mx-auto h-full w-full flex flex-col gap-10 items-center justify-center">
@@ -38,9 +39,17 @@ export function HeroSection() {
           <div className="flex items-center gap-2.5 flex-wrap justify-center">
             <Link
               href={"#event"}
-              className="h-10 flex items-center justify-center w-fit px-5 text-sm font-normal tracking-wide text-primary rounded-full transition-all ease-out active:scale-95 bg-white border border-[#E5E7EB]  hover:bg-white/90"
+              className="h-10 flex items-center justify-center w-60 px-5 text-sm font-normal tracking-wide text-primary rounded-full transition-all ease-out active:scale-95 bg-white border border-[#E5E7EB]  hover:bg-white/90"
             >
               Découvrir l&apos;événement
+            </Link>
+            <Link href="/become-athlete">
+              <Button
+                className="rounded-full w-60 cursor-pointer"
+                size="lg"
+              >
+                Participer au concours
+              </Button>
             </Link>
           </div>
         </div>

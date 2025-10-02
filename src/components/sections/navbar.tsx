@@ -175,12 +175,12 @@ export function Navbar() {
 
               <div className="flex flex-row items-center gap-1 md:gap-3 shrink-0">
                 <div className="flex items-center space-x-6">
-                  <Link href="#contact">
+                  <Link href="/become-athlete">
                     <Button
                       className="rounded-full hidden md:block cursor-pointer"
                       size="lg"
                     >
-                      Prendre RDV
+                      Participer
                     </Button>
                   </Link>
                 </div>
@@ -270,9 +270,11 @@ export function Navbar() {
 
                   {/* Action buttons */}
                   <div className="flex flex-col gap-2">
-                    <Button className="w-full rounded-full" size="lg">
-                      Prendre RDV
-                    </Button>
+                    <Link href="/become-athlete">
+                      <Button className="w-full rounded-full" size="lg">
+                        Participer au concours
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>

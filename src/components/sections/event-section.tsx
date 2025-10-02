@@ -1,7 +1,7 @@
 "use client";
 
 import { SectionHeader } from "@/components/section-header";
-import Title from "../primitives/Title";
+import Title, { titleStyle } from "../primitives/Title";
 
 import {
   Calendar,
@@ -31,6 +31,7 @@ import {
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Subtitle from "../primitives/Subtitle";
 
 const rewards = [
   {
@@ -136,17 +137,13 @@ const items = [
 
 export function EventSection() {
   return (
-    <div
+    <section
       id="event"
       className="w-full relative px-6 py-12 md:py-16 min-h-screen flex flex-col gap-8 md:gap-12 bg-gradient-to-br from-gray-50 via-white to-primary-50"
     >
       <SectionHeader className="max-w-screen-xl mx-auto text-center">
-        <Title level={2} color="primary">
-          L&apos;Évènement
-        </Title>
-        <Title level={2} size="sm">
-          Calendrier & Déroulement 2025-2026
-        </Title>
+        <Title level={2}>L&apos;Évènement</Title>
+        <Subtitle>Calendrier & Déroulement 2025-2026</Subtitle>
       </SectionHeader>
 
       {/* Info Cards */}
@@ -156,9 +153,15 @@ export function EventSection() {
             <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
               <Send className="text-primary-600" size={24} />
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-primary-600">
-              INSCRIPTIONS
-            </h3>
+            <p
+              className={titleStyle({
+                color: "primary",
+                size: "xs",
+                className: "text-start",
+              })}
+            >
+              Inscriptions
+            </p>
           </div>
           <p className="text-gray-700 leading-relaxed">
             Êtes-vous prêts à changer de destin ? Inscrivez-vous sur votre
@@ -172,9 +175,15 @@ export function EventSection() {
             <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
               <Users className="text-primary-600" size={24} />
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-primary-600">
-              PHASES DE PRÉSÉLECTIONS
-            </h3>
+            <p
+              className={titleStyle({
+                color: "primary",
+                size: "xs",
+                className: "text-start",
+              })}
+            >
+              Phases de Préselections
+            </p>
           </div>
           <p className="text-gray-700 leading-relaxed">
             Les Prépaya Audites Cofoun, évoluent tissus, qui prennent le relais,
@@ -242,7 +251,7 @@ export function EventSection() {
           </Button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 }
 
