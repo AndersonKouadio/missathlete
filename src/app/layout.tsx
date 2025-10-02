@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/lib/site";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -40,15 +41,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans bg-background`}
       >
+        <GoogleAnalytics gaId="G-FGLZS43L3V" />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="max-w-7xl mx-auto border-x relative">
-            {children}
-          </div>
+          <div className="max-w-7xl mx-auto border-x relative">{children}</div>
         </ThemeProvider>
       </body>
     </html>
