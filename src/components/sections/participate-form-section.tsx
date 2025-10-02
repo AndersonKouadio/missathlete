@@ -232,7 +232,8 @@ export function ParticipateFormSection() {
               <Image
                 src="https://cdn.cosmos.so/2b310226-d0b5-45ab-822f-b9ac3b95df32?format=jpeg"
                 alt="Sport"
-                fill
+                width={1000}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
